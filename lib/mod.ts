@@ -1,7 +1,7 @@
 type PrintNode<T> = (node: T, branch: string) => string | undefined
 type GetChildren<T> = (node: T) => Array<T>
 
-function printTree<T>(initialTree T, printNode: PrintNode<T>, getChildren: GetChildren<T>) {
+export function printTree<T>(initialTree T, printNode: PrintNode<T>, getChildren: GetChildren<T>) {
   const str: string[] = [];
   function printBranch(tree, branch) {
     const isGraphHead = branch.length === 0;
